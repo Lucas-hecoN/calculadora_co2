@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pegada de Carbono - COP30</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌱 Calculadora de Pegada de Carbono - COP30</h1>
+        <form id="carbonForm">
+            <label>Como você veio até Belém?</label>
+            <select id="transporte">
+                <option value="aviao">Avião</option>
+                <option value="carro">Carro</option>
+                <option value="onibus">Ônibus</option>
+                <option value="bicicleta">Bicicleta / A pé</option>
+            </select>
+
+            <label>Distância percorrida (km):</label>
+            <input type="number" id="distancia" min="0" required>
+
+            <label>Dias hospedado em Belém:</label>
+            <input type="number" id="dias" min="1" required>
+
+            <label>Alimentação:</label>
+            <select id="alimentacao">
+                <option value="comum">Comum</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="vegana">Vegana</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
